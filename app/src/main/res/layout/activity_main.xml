@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Actvity.MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_backround"
+        android:paddingBottom="@dimen/margin_top_20"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/im_switch_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5"
+            android:layout_marginRight="@dimen/vfy_10"
+            android:src="@drawable/profile_icon_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/im_ahmed_profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_20"
+            android:layout_marginTop="@dimen/vfy_10"
+            android:src="@drawable/ahmed_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/im_switch_image" />
+        <TextView
+            android:id="@+id/tv_ahmed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_5"
+            android:text="@string/tv_ahmad_Text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            app:layout_constraintStart_toEndOf="@+id/im_ahmed_profile_image"
+            app:layout_constraintTop_toTopOf="@id/im_ahmed_profile_image" />
+        <TextView
+            android:id="@+id/tv_ahmed_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_ahmed_number_Text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_12"
+            app:layout_constraintStart_toStartOf="@id/tv_ahmed_text"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ahmed_text" />
+        <ImageView
+            android:id="@+id/im_notverfiy_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vfy_10"
+            android:src="@drawable/ic_not_verfied_image"
+            app:layout_constraintStart_toEndOf="@+id/tv_ahmed_text"
+            app:layout_constraintTop_toTopOf="@+id/tv_ahmed_text" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constarin_Verfy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_20"
+            android:layout_marginTop="@dimen/margin_top_20"
+            android:layout_marginRight="@dimen/margin_top_20"
+            android:background="@drawable/verfiy_account_backround"
+            android:paddingBottom="@dimen/vfy_10"
+            app:layout_constraintStart_toStartOf="@id/im_ahmed_profile_image"
+            app:layout_constraintTop_toBottomOf="@id/im_ahmed_profile_image">
+            <ImageView
+                android:id="@+id/im_account_sht_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vfy_10"
+                android:src="@drawable/verfify_account_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv_verfiy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:padding="@dimen/padding_5"
+                android:text="@string/tv_verify_account_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/top_15"
+                app:layout_constraintStart_toEndOf="@+id/im_account_sht_image"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv_send_money_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:padding="@dimen/padding_5"
+                android:text="@string/tv_send_money_text"
+                android:textColor="@color/solid"
+                android:textSize="@dimen/top_15"
+                app:layout_constraintStart_toEndOf="@+id/im_account_sht_image"
+                app:layout_constraintTop_toBottomOf="@+id/tv_verfiy_text" />
+            <ImageView
+                android:id="@+id/im_verfy_arrow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_5"
+                android:layout_marginRight="@dimen/vfy_10"
+                android:padding="@dimen/padding_5"
+                android:src="@drawable/vector_arrow_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parent_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_top_20"
+        android:layout_marginTop="@dimen/margin_top_20"
+        android:layout_marginRight="@dimen/margin_top_20"
+        android:paddingBottom="250dp"
+        app:layout_constraintTop_toBottomOf="@id/constrain_profile_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

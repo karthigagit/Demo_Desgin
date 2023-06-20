@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_backround"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Dashboard.DashboardActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="120dp">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLine4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/getOTPLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_layout_backround"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideLine4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideLine3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.76" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/aed_height"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/aed_backround"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/aed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/vfy_10"
+                android:fontFamily="@font/lataextrabold"
+                android:gravity="center"
+                android:text="@string/tv_aed_text"
+                android:textColor="@color/blacks"
+                android:textSize="@dimen/textsize_22"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/aedDes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/phone_5"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center"
+                android:text="@string/tv_aed_des"
+                android:textColor="@color/solid"
+                android:textSize="@dimen/aed_text"
+                app:layout_constraintTop_toBottomOf="@+id/aed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/quick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_30"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/tv_action"
+            android:textColor="@color/fill_solid"
+            app:layout_constraintTop_toBottomOf="@+id/aedLayout" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/completeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/phone_60"
+            android:layout_marginTop="@dimen/margin_20"
+            android:background="@drawable/verfication_backround"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/quick">
+
+            <ImageView
+                android:id="@+id/shapeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/complete_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/completeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center"
+                android:padding="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/tv_verfication"
+                android:textColor="@color/light_blue"
+                app:layout_constraintStart_toEndOf="@id/shapeIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/verfifyArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/verfication_arrow_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/phone_60"
+            android:layout_marginTop="@dimen/vfy_10"
+            android:background="@drawable/verfication_backround"
+            android:padding="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/completeLayout">
+
+            <ImageView
+                android:id="@+id/plusImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ratealert_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:gravity="center"
+                android:padding="5dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/tv_rate_alert"
+                android:textColor="@color/light_blue"
+                app:layout_constraintStart_toEndOf="@id/plusImage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/plusArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/verfication_arrow_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bottom_30"
+            android:fontFamily="@font/lato_regular"
+            android:text="@string/tv_like_text"
+            android:textColor="@color/fill_solid"
+            app:layout_constraintTop_toBottomOf="@+id/rateLayout" />
+        -<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_5"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/like"
+        app:layout_constraintTop_toBottomOf="@+id/like">
+
+    </androidx.recyclerview.widget.RecyclerView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/viewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="@dimen/bottom_30"
+        android:text="@string/tv_ahmed"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lato_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_20"
+        android:src="@drawable/profile_image"
+        app:layout_constraintEnd_toStartOf="@+id/notfiImage"
+        app:layout_constraintTop_toTopOf="@+id/viewText" />
+
+    <ImageView
+        android:id="@+id/notfiImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_20"
+        android:src="@drawable/bell_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_50"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/gpb_backround"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewText">
+        <include
+            layout="@layout/dashborads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+

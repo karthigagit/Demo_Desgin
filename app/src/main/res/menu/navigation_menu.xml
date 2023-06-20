@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_image"
+        android:visible="true"
+        android:title="@string/home_Dashborad" />
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/actvity_image"
+        android:visible="true"
+        android:title="@string/actvity_ashborad" />
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/cards_image"
+        android:visible="true"
+        android:title="@string/card_dashborad" />
+    <item
+        android:id="@+id/navigation_market"
+        android:icon="@drawable/setting_image"
+        android:visible="true"
+        android:title="@string/setting_dashborad" />
+</menu>

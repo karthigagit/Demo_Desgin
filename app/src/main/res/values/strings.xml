@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Demo_Desgin</string>
+    <string name="tv_personal_info">Personal Info</string>
+    <string name="tv_manage_recipients">Manage Recipients</string>
+    <string name="tv_manage_payments"> Manage Auto Payments</string>
+    <string name="tv_saved_card"> Saved Cards</string>
+    <string name="tv_ahmad_Text"> Ahmad Nesar</string>
+    <string name="tv_ahmed_number_Text"> +971 778889999</string>
+    <string name="tv_verify_account_text"> Verify Account</string>
+    <string name="tv_send_money_text"> Verify account to send money to your loved ones</string>
+    //bottom navigation string
+    <string name="home_Dashborad">Home</string>
+    <string name="actvity_ashborad">Activity</string>
+    <string name="card_dashborad">Cards</string>
+    <string name="setting_dashborad">Settings</string>
+    //dashborad
+    <string name="tv_ahmed">Hii ahamed</string>
+    <string name="tv_action">Quick Actions</string>
+    <string name="tv_verfication">Complete your verification</string>
+    <string name="tv_rate_alert">Create Rate Alert</string>
+    <string name="tv_like_text">What would you like to do?</string>
+
+    <string name="tv_money">send Money</string>
+    <string name="tv_bills">Pay Bills</string>
+    <string name="tv_track_rates">Track Rates</string>
+    <string name="homedashborad">Home</string>
+
+    //9screen
+    <string name="aed" translatable="false">AED</string>
+    <string name="gbp" translatable="false">GBP</string>
+    <string name="tv_aed_text" translatable="false">1AED = 0.192GBP
+</string>
+    <string name="tv_aed_des" translatable="false">+0.110 GBP since last month
+</string>
+    <string name="verfy_Skip" translatable="false">skip</string>
+    <string name="verfy_Now_text"> verfied Now
+</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
